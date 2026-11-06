@@ -6,7 +6,10 @@ import org.springframework.stereotype.Component;
 @Component
 @ConfigurationProperties("payment-service")
 //so this would become the configuration file , usually people use this file to inject depenedency into their file (in this case it is paymentGateway)
+
 public class PaymentProperties {
+    //⚠️ usually what happens in production is we would be having configurations files in this case it is (paymentProperties) which reads all the configuration and usually we inject the dependency using another file like we have in this case it is paymentGateway
+
     private String type;
     private int retrycount;
     private boolean enabled;

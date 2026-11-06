@@ -36,8 +36,6 @@ public class PaymentGateway {
         System.out.println(getTimeout());
     }
 
-
-
 //these are the field autowired for the @Value , does the same work as the constructors
     //but doing these things individuallly would take up a lot of effort and inefficient , for that we have a class level annotation called --> @ConfigurationProperties
 //    @Value("${paymentGateway.type}")

@@ -11,12 +11,10 @@ public class Springboot1Application {
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(Springboot1Application.class, args);
 
-		PaymentGateway paymentGateway = context.getBean(PaymentGateway.class);
-		paymentGateway.print();
-
+//		PaymentGateway paymentGateway = context.getBean(PaymentGateway.class);
+//		paymentGateway.print();
 
 //		paymentGateway.setType("Crypto");
 //		paymentGateway.setRetryCount(5);
-
 	}
 }
